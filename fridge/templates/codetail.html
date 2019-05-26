@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+    {% block content %}
+    
+    <div class = 'codetail'>
+        <div class = 'codetail_content'>
+            <h2>{{ copost.title }}</h2>
+            <h2>{{ copost.user_name }}</h2>
+            <h5>{{ copost.contents }}</h5>
+        </div>
+        <div class = 'codetail_return'>
+            <a href="{% url 'cohome' %}">글 목록으로 돌아가기</a><br>
+            <a href="{% url 'coedit' copost.pk %}">수정하기</a><br>
+            <a href="{% url 'codelete' copost.pk %}">삭제하기</a>
+        </div>
+    </div>
+{% endblock content %}
+
+</body>
+
+</html>

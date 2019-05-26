@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load staticfiles %}
+    {% block content %}
+    <div class="home_p1">
+        <div class="home_text">
+            <a class="hello1">For Your<br> Convenient Interior!</a>
+            <p class="hello2">제가 개발하고자 하는 서비스는 인테리어 시뮬레이션 웹서비스 입니다! <span>Mr.Interior</span> 를 통해
+            보다 직관적인 셀프 인테리어가 가능하도록 하는 것이 목표이며, 실제공간을 양식에 맞게 업로드하고 그 위에서 자신만의 인테리어를 구현해 볼 수 있는 프로그램을 적용할 예정입니다!</p>
+        </div>
+    </div>
+    <a class="my2">INFO</a>
+    <div class="home_p2">
+        {% comment %} {% for post, date in post_dict.items %}
+            {% if date < 0 %}
+                <div class="contents">
+                    <a href = "{% url 'detail' post.pk %}"><img src ="{{ post.img.url }}"/></a><br>
+                    <div class="content_info">        
+                        <p><a href = "{% url 'detail' post.pk %}"> <span>이름: </span>{{post.name}}</a><br> <span>분류: </span>{{post.family}}</p>
+                        <p class="date1">{{ date }}일 지났습니다! 버리세요!</p>
+                    </div>
+                </div>
+            {% else %}
+                <div class="contents">
+                    <a href = "{% url 'detail' post.pk %}"><img src ="{{ post.img.url }}"/></a><br> 
+                    <div class="content_info">        
+                        <p><a href = "{% url 'detail' post.pk %}"> <span>이름: </span>{{post.name}}</a><br><span>분류: </span>{{post.family}}</p>
+                        <a class="date2">{{ date }}일 남았습니다</a>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %} {% endcomment %}
+        <div class='info'>
+        <p class ='intro' >안녕하세요 저는 고려대학교 심리학과에 재학중인 멋쟁이 사자처럼 7기 최상입니다!<br>
+        멋사에서 다양한 사람들과 교류하며 혼자서는 얻을 수 없는 정보들을 얻고, 탄탄한 프로그래밍의 기본기를 쌓고 싶습니다. <br>
+        또한 착실하게 쌓은 이론적 지식들을 실무환경에서 어떻게 활용할 수 있는지 경험해보고 능동적으로 서비스를 구현함으로써 빠르게 성장하고 싶습니다. 
+        기술적인 측면 뿐만 아니라 좋은 사람들과의 관계를 얻어가는 것이 또 하나의 목표입니다. 
+        잘 부탁드립니다!</p>
+        </div>
+    </div>
+    {% endblock content %}

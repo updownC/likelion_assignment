@@ -1,0 +1,21 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class = 'about'>
+        <div class ='dldlk'>
+        <div class = 'about_logo'>
+            <img src = "{% static 'logo1.png' %}" class="about_logo_img">
+        </div>
+        <div class = 'about_logo_name'>
+            <h1><b><i>MR. Fridge</b></i></h1>
+        </div>
+        <div class = 'about_explan'>
+            <p class = 'about_explan1'><i><b>냉장고 속 유통기한, 저희가 지켜드립니다.</b></i></p><br>
+            <p>1. 유통기한 알림: 유통기한이 임박한 재료를 알려드립니다.<br><br>2. 레시피 제공: 남은 재료를 빠르게 처리할 수 있는 레시피 소개해 드립니다.<br><br>3. 요리팁 공유: 유저들 간 커스텀 레시피 공유</p>
+        </div>
+        </div>
+    </div>
+{% endblock content %}
+</body>
+</html>

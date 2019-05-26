@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Nanum+Gothic|Raleway" rel="stylesheet">
+    <link rel = 'stylesheet' href = "{%static 'base.css' %}?v=0.7"/>
+    <title>MR.Fridge</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo"><a href="{% url 'home' %}">HOME</a></div>
+        <div class="items">
+            <div class="navitem"><a href="{% url 'home' %}">{{ user.username }}님이 로그인하셨습니다</a></div>
+            <div class="navitem"><a href="{% url 'about' %}">ABOUT</a></div>
+            <div class="navitem"><a href="{% url 'new' %}">NEW</a></div>
+            <div class="navitem"><a href="{% url 'cohome' %}">커뮤니티</a></div>
+            <div class="navitem"><a href="{% url 'logout' %}">로그아웃</a></div>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

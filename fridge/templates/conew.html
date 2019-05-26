@@ -1,0 +1,17 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="conew_p1">
+<a class="hello_conew">"Share<br> Your Recipes!"</a>
+</div>
+<div class="conew_p2">
+<form method="POST">{% csrf_token %}
+{{ form.as_p }}
+{% comment %} 1 {% endcomment %}
+<button type="submit" class="btn btn-success">레시피 공유 완료!</button>
+</form>
+</div>
+{% endblock content %}
+</body>
+</html>

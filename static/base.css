@@ -1,0 +1,496 @@
+/* base */
+
+/* base.html */
+body{
+  margin: 0;
+  background-color: rgba(204, 204, 204, 0.205);
+}
+.navbar {
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    background-color: #ffffff56;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+.navitem a{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    margin : 0 2px;
+  }
+
+.items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width:35%;
+  margin-right: 1%;
+}
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:visited {
+    color: black;
+  }
+
+
+
+/* home.html */
+.home_p1{
+  background-image:url('home_img3.jpg');
+  background-position-y: 21%;
+  background-size: 100%;
+  height: 55vh;
+  max-width : 100%;
+  margin-bottom: 2%;
+}
+.home_text{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 40%;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 8%;
+
+}
+
+.hello1{
+
+  font-family: 'Lobster', cursive;
+  font-size: 550%;
+  color : rgba(45, 90, 51, 0.945);
+  margin-right: 15%;
+  line-height: 1.2em;
+
+}
+.hello2{
+  margin-top:3%;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 150%;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.596);
+  line-height:1.7em ;
+  margin-left: 15%;
+}
+.hello2 span{
+  font-family:'Lobster', cursive;
+}
+.home_p2{
+  border-top: 2px solid rgba(128, 128, 128, 0.411);
+  display: flex;
+  width : 75%;
+  height: 100%;
+  justify-content: space-between;
+  margin: 1% auto;
+  padding-top :2%;
+}
+.info{
+  padding : 10px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 150%;
+  line-height: 1.7em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: initial;
+}
+.intro{
+  margin-top: 0.5%;
+}
+.contents{
+  display: flex;
+  flex-direction: column;
+  width: 27vh;
+  height: 36vh;
+  background-color: rgba(207, 207, 207, 0.267);
+  margin : 2% 1%;
+  padding : 2%;
+  justify-content: center;
+  align-items: center;
+  border : 1.5px solid rgba(128, 128, 128, 0.226);
+}
+.content_info{
+
+  display: flex;
+  width: 25vh;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 20px;
+  margin-bottom : 7%;
+  margin-right: 10%;
+
+}
+.contents img{
+  width: 30vh;
+  height: 30vh;
+  margin-top: 10px;
+}
+.contents p{
+  margin: 0;
+}
+.contents span{
+  font-weight: 700;
+}
+.date2{
+  padding-top: 3%;
+  color : rgb(11, 96, 175);
+  font-weight: bold;
+}
+.date1{
+  padding-top: 3%;
+  color : rgb(219, 44, 67);
+  font-weight: bold;
+}
+.my2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 13%;
+  margin-top: 10%;
+}
+
+/* detail.html */
+.dldl {
+  display: flex;
+  justify-content: center;
+  background: rgba(204, 204, 204, 0.205);
+}
+
+.detail{
+  width: 650px;
+  height: 500px;
+  border: black solid 1px;
+  background: white;
+  display: flex;
+  margin-top: 9.9%;
+  margin-bottom: auto;
+}
+
+.left{
+  width: 430px;
+  height: 500px;
+}
+.left img {
+  width: 430px;
+  height: 500px;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+}
+
+.detail_name_box{
+  color: rgb(253, 180, 91);
+  display: flex;
+  width: 220px;
+  height: 100px;
+  border-bottom: solid 1px rgb(0, 0, 0);
+  text-align: center;
+  justify-content:center;
+}
+.info{
+  margin-top: auto;
+  margin-bottom:auto;
+}
+.detail_name{
+  font-size: 30px;
+  margin-bottom:auto;
+  margin-top: auto;
+}
+
+.return{
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 24px;
+}
+.return button {
+  font-size: 15px;
+  width: fit-content;
+  border-radius: 10px;
+  margin-bottom: 4px;
+}
+ 
+/* new.html */
+.new_box{
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.new-write {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.new-write select {
+  width: 60px;
+  height: 30px;
+  font-size: 15px;
+}
+.new-forms {
+  margin: 10px 0px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.new-forms input {
+  size: 20px;
+  font-size: 15px;
+}
+.new-forms button {
+  font-size: 17px;
+  border-radius: 10px;
+}
+.new-forms #id_name {
+  width: 200px;
+  height: 20px;
+}
+/* recipe.html */
+.recipe-box {
+  margin: 0 7%;
+
+}
+.find-recipe{
+  font-size: 35px;
+  font-weight: bold;
+  padding : 5px 45px;
+  margin: 1% 0;
+  border-radius: 3%;
+}
+.recipe-search {
+
+  margin: 5% auto;
+  margin-bottom: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+  height: 25vh;
+  border : 3px solid rgba(143, 143, 143, 0.233);
+  width: 60%;
+}
+.recipe-search form {
+
+  width: 65%;
+  display: flex;
+  justify-content: space-around;
+}
+.recipe-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.recipe-checkbox div {
+
+  margin: 2px 10px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+.recipe-toggle-button {
+  margin-top: 20px;
+}
+.recipe-toggle-button button {
+  font-size: 18px;
+  width: fit-content;
+  padding: 4px 70px;
+  border : 3px solid rgb(4, 158, 4);
+  background-color: rgba(255, 255, 255, 0);
+  margin-bottom: 15%;
+  color: rgba(3, 88, 3, 0.897);
+}
+.my{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 5.3%;
+  margin-top: 30%;
+}
+.recipe-posts {
+  border-top : 1.5px solid rgba(128, 128, 128, 0.486);
+  padding-top: 3vh; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0.5% auto;
+}
+.recipe-images {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.recipe-images img {
+  border: 1px solid gray;
+  width: 290px;
+  height: 200px;
+}
+
+/* about.html */
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dldlk{
+  margin-top: 200px;
+  margin-bottom: auto;
+  text-align: center;
+  margin-bottom: 250px;
+}
+
+.about_logo_img{
+  width: 1020px;
+  height: 480px;
+  margin: 100px;
+}
+
+.about_logo_name{
+  font-family:'Lobster', cursive;
+  margin-top: 100px;
+  font-size: 50px;
+}
+
+.about_explan{
+  font-family: 'Nanum Gothic', sans-serif;
+  margin-top: 50px;
+  font-size: 28px;
+
+}
+.about_explan1{
+  font-size: 130%;
+  opacity: 0.6;
+}
+
+/* edit.html */
+
+
+/* cohome.html*/
+.hello_cohome{
+  font-family: 'Lobster', cursive;
+  font-size: 600%;
+  color : rgba(33, 70, 39, 0.945);
+  margin-right: 30%;
+  margin-top: 100px;
+  line-height: 1.2em;
+}
+
+
+.cohome_p1{
+  margin-top :50px;
+  background-image: url('배경_요리.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: block;
+  padding-top : 40px;
+  padding-left : 40px;
+  color:white;
+}
+
+.cohome_p2{
+  width: 75%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 3% auto;
+  box-sizing: border-box;
+
+}
+
+.coposts_title{
+  color: black;
+}
+.pagination{
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.button_cohome{
+  margin-top: 8px;
+}
+/*copost.html*/
+.codetail{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1400px;
+}
+
+.codetail_return{
+  position: absolute;
+
+  margin-top: 770px;
+  margin-left: 350px;
+}
+
+.gg{
+  margin-left:395px;
+  margin-top: 250px;
+  position: absolute;
+
+}
+.codetail_content{
+  text-align: center;
+  margin-top: 250px;
+}
+
+.hello_conew{
+  font-family: 'Lobster', cursive;
+  font-size: 600%;
+  color : rgba(247, 247, 247, 0.945);
+  margin-right: 30%;
+  margin-top: 50px;
+}
+
+.conew_p1{
+  background-image: url('도마.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: block;
+  padding-top: 50px;
+  padding-left: 70px;
+}
+
+.conew_p2{
+  width: 75%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3% auto;
+  box-sizing: border-box;
+}
+
+.conew_p2 span{
+  font-family: moon;
+  font-size: 20px;
+}
+
+.cotitle input{
+  width: 100px;
+  height: 10px;
+}

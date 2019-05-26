@@ -1,0 +1,42 @@
+.IDPASS {
+    width: 30%;
+    padding: 2rem 3rem;
+    background: rgba(255,255,255, 0.7);
+    border-radius: 10px;
+    text-align: center;
+}
+.background form{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+
+.background{
+    background-image: url('peter-wendt-123928-unsplash.jpg');
+    background-size: cover;   
+}
+
+.loginlabel{
+   height: 50px; 
+}
+
+.loginlabel input{
+    height: 35px;
+
+}
+
+.userlabel{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.login-buttons {
+    margin-top: 12px;
+}
+
+.login-buttons button {
+    margin: 0 5px;
+    font-size: 17px;
+    width: fit-content;
+}

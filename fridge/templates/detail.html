@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+    {% block content %}
+    <style type = "text/css">
+    </style>
+    <div class = 'dldl'>
+    <div class = 'detail'>
+        <div class = 'left'>
+            <img src="{{ post.img.url }}" />
+        </div>
+
+        <div class = 'right'>
+            <div class = "detail_name_box">
+                <h1 class = 'detail_name' > {{ post.name }}<br>상세정보 </h1>
+            </div>
+            <div class="info">
+                <h2>{{ post.name }}</h2>
+                <h4>{{ post.family }}</h4>
+                {% if exp_date >= 0 %}
+                <h4>{{ exp_date }}일 남았습니다.</h4>
+                {%else%}
+                <h4>{{ exp_date }}지났습니다! 버리세요!</h4>
+                {% endif %}
+                <h4>{{post.memo}}</h4>
+            </div>
+
+
+                <div class="return">
+                    <a href="{% url 'edit' post.pk %}"><button>게시물 수정하기</button></a><br>
+                    {% if exp_date >= 0 %}
+                    <a href="{% url 'delete' post.pk %}"><button>먹어버리기</button></a>
+                    {% else %}
+                    <a href="{% url 'delete' post.pk %}"><button>갖다버리기</button></a>
+                    {% endif %}
+                </div>
+        </div>
+    </div>
+    </div>
+    {% endblock %}
+
+</body>
+</html>

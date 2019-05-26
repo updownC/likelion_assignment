@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class = 'new_box'>
+        <h1>새로운 음식을 냉장고에 넣기 <strong>🛒</strong></h1>
+        <form method='POST' enctype='multipart/form-data'>{%csrf_token%}
+            <div class="new-write">
+                <div class="new-forms">이름: {{ form.name }}</div>
+                <div class="new-forms">카테고리: {{ form.family }}</div>
+                <div class="new-forms">유통기한: {{ form.year }}{{ form.month }}{{ form.date }}</div>
+                <div class="new-forms">사진업로드: {{ form.img }}</div>
+                <div class="new-forms"><button type='submit'>제품등록</button></div>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
+</body>
+</html>
